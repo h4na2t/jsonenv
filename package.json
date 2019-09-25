@@ -1,0 +1,52 @@
+{
+  "name": "jsonenv",
+  "version": "0.0.1",
+  "description": "Loads environment variables from .env file into json",
+  "main": "lib/main.js",
+  "scripts": {
+    "flow": "flow",
+    "lint": "standard",
+    "postlint": "standard-markdown",
+    "pretest": "npm run lint",
+    "test": "tap tests/*.js --100",
+    "prerelease": "npm test",
+    "release": "standard-version",
+    "debug": "node lib/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/h4na2t/jsonenv.git"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    ".env",
+    "environment",
+    "variables",
+    "config",
+    "settings",
+    "jsonenv"
+  ],
+  "readmeFilename": "README.md",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "decache": "^4.5.1",
+    "flow-bin": "^0.105.2",
+    "sinon": "^7.4.1",
+    "standard": "^13.1.0",
+    "standard-markdown": "^5.1.0",
+    "standard-version": "^7.0.0",
+    "tap": "^14.6.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "standard": {
+    "ignore": [
+      "flow-typed/"
+    ]
+  }
+}
