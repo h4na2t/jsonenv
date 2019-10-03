@@ -1,21 +1,19 @@
 {
-  "name": "jsonenv",
+  "name": "@h4na2t/jsonenv",
   "version": "0.0.1",
   "description": "Loads environment variables from .env file into json",
   "main": "lib/main.js",
   "scripts": {
     "flow": "flow",
-    "lint": "standard",
     "postlint": "standard-markdown",
-    "pretest": "npm run lint",
-    "test": "tap tests/*.js --100",
+    "test": "tap test/*.js --100",
     "prerelease": "npm test",
     "release": "standard-version",
     "debug": "node lib/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/h4na2t/jsonenv.git"
+    "url": "https://github.com/h4na2t/jsonenv.git"
   },
   "keywords": [
     "dotenv",
